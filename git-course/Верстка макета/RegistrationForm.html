@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Barlow', sans-serif;
+            background-color: #EFF6FF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-wrapper">
+            <h2>Get iintoo it today</h2>
+            <p>There is no charge or obligation upon registration.</p>
+            <div class="social-buttons">
+                <button class="facebook">Register with Facebook</button>
+                <button class="linkedin">Register with LinkedIn</button>
+            </div>
+            <div class="divider">or</div>
+            <form>
+                <div class="input-group">
+                    <input type="email" placeholder="Email" required>
+                    <input type="text" placeholder="Phone">
+                </div>
+                <p>What type of investor are you?</p>
+                <div class="radio-group">
+                    <label><input type="radio" name="investor" checked> Individual</label>
+                    <label><input type="radio" name="investor"> Business</label>
+                    <label><input type="radio" name="investor"> IRA</label>
+                    <label><input type="radio" name="investor"> Trust</label>
+                </div>
+                <div class="tooltip">I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common.</div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="terms">
+                    <label for="terms">I agree to the terms and receiving notifications from iintoo <a href="#">View full terms</a></label>
+                </div>
+                <button class="submit">Create Account</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
